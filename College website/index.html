@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olympus University — Rise Above. Lead Beyond. A premier NAAC A++ institution in Bengaluru offering 47 programs across 12 departments. Admissions Open 2025-26.">
+  <meta name="keywords" content="Olympus University, Bengaluru, Engineering, MBA, NAAC A++, Admissions 2025, Best University Karnataka">
+  <meta name="author" content="Olympus University">
+  <title>Olympus University — Rise Above. Lead Beyond.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,8 90,85 10,85' fill='%23C9A84C'/><circle cx='50' cy='20' r='8' fill='%230B1340'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- LOADER WITH SHADER LINES -->
+<div class="loader-screen" id="loaderScreen">
+  <div id="shaderContainer" style="position:absolute;inset:0;z-index:0"></div>
+  <div class="loader-content" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center">
+    <img src="logo.png" alt="Olympus University" class="loader-logo-img" style="width:120px;height:120px;object-fit:contain;border-radius:50%;border:3px solid rgba(201,168,76,0.4);padding:8px;background:rgba(11,19,64,0.6);backdrop-filter:blur(10px);margin-bottom:1.5rem;transform:scale(0);animation:loaderScale 0.6s ease 0.2s forwards">
+    <div class="loader-logo display-font" style="text-shadow:0 0 40px rgba(201,168,76,0.3)">OLYMPUS UNIVERSITY</div>
+    <p style="color:rgba(201,168,76,0.7);font-size:0.85rem;letter-spacing:3px;text-transform:uppercase;margin-bottom:2rem;animation:fadeIn 0.8s ease 0.6s both">Rise Above. Lead Beyond.</p>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <a href="tel:+918045678900"><i class="fas fa-phone"></i> +91-80-4567-8900</a>
+      <a href="mailto:admissions@olympusuniversity.edu.in"><i class="fas fa-envelope"></i> admissions@olympusuniversity.edu.in</a>
+    </div>
+    <div class="topbar-center">
+      <div class="marquee">
+        <span>📢 Admissions Open 2025-26 — Apply Before June 30</span>
+        <span>🏆 Olympus Ranked #3 in South India by NIRF 2025</span>
+        <span>📅 Annual Tech Fest 'SUMMIT 2025' — Aug 14-16</span>
+        <span>🎓 Convocation Ceremony — July 20, 2025</span>
+        <span>📢 Admissions Open 2025-26 — Apply Before June 30</span>
+        <span>🏆 Olympus Ranked #3 in South India by NIRF 2025</span>
+        <span>📅 Annual Tech Fest 'SUMMIT 2025' — Aug 14-16</span>
+        <span>🎓 Convocation Ceremony — July 20, 2025</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <button class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+      <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Olympus University" style="width:42px;height:42px;object-fit:contain;border-radius:50%;border:1px solid rgba(201,168,76,0.5)">
+      <div class="nav-logo-text">OLYMPUS<span>UNIVERSITY</span></div>
+    </a>
+    <div class="nav-links">
+      <div class="nav-item"><a href="index.html" class="nav-link active">Home</a></div>
+      <div class="nav-item">
+        <a href="about.html" class="nav-link">About <i class="fas fa-chevron-down" style="font-size:10px"></i></a>
+        <div class="dropdown">
+          <a href="about.html">Our Story</a>
+          <a href="about.html#vision">Vision & Mission</a>
+          <a href="about.html#leadership">Leadership</a>
+          <a href="about.html#accreditations">Accreditations</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="departments.html" class="nav-link">Departments <i class="fas fa-chevron-down" style="font-size:10px"></i></a>
+        <div class="dropdown">
+          <a href="cse.html">Computer Science & Engineering</a>
+          <a href="departments.html">Electronics & Communication</a>
+          <a href="departments.html">Mechanical Engineering</a>
+          <a href="departments.html">Business Administration</a>
+          <a href="departments.html">View All Departments</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="academics.html" class="nav-link">Academics <i class="fas fa-chevron-down" style="font-size:10px"></i></a>
+        <div class="dropdown">
+          <a href="academics.html">Programs Offered</a>
+          <a href="academics.html#calendar">Academic Calendar</a>
+          <a href="academics.html#exam">Examination Cell</a>
+          <a href="research.html">Research Centers</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="admissions.html" class="nav-link">Admissions</a></div>
+      <div class="nav-item"><a href="placements.html" class="nav-link">Placements</a></div>
+      <div class="nav-item"><a href="research.html" class="nav-link">Research</a></div>
+      <div class="nav-item"><a href="campus.html" class="nav-link">Campus Life</a></div>
+      <div class="nav-item"><a href="alumni.html" class="nav-link">Alumni</a></div>
+      <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+    </div>
+    <div class="nav-actions">
+      <div class="notification-bell"><i class="fas fa-bell"></i><span class="notification-badge">3</span></div>
+      <a href="students.html" class="btn btn-gold btn-sm">Student Login</a>
+      <a href="faculty.html" class="btn btn-outline btn-sm">Faculty Login</a>
+    </div>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="departments.html">Departments</a>
+  <a href="academics.html">Academics</a>
+  <a href="admissions.html">Admissions</a>
+  <a href="placements.html">Placements</a>
+  <a href="research.html">Research</a>
+  <a href="campus.html">Campus Life</a>
+  <a href="alumni.html">Alumni</a>
+  <a href="contact.html">Contact</a>
+  <a href="students.html" style="color:var(--gold)">Student Login</a>
+  <a href="faculty.html" style="color:var(--gold)">Faculty Login</a>
+</div>
+
+<!-- ═══════ SECTION A — HERO ═══════ -->
+<section class="hero" id="hero">
+  <div class="hero-particles" id="particles-js"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-aos="fade-down">
+      🏛️ NAAC A++ &nbsp;|&nbsp; NIRF Ranked #3 in South India
+    </div>
+    <h1 data-aos="fade-up" data-aos-delay="200">
+      <span class="display-font">Rise Above.</span><br>
+      <span class="line2 display-font">Lead Beyond.</span>
+    </h1>
+    <p class="hero-sub" data-aos="fade-up" data-aos-delay="400">
+      Olympus University — Where Excellence Meets Innovation.<br>
+      37 Years of Academic Legacy. 50,000+ Alumni Worldwide.
+    </p>
+    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+      <button onclick="showToast('Admissions module launching soon!')" class="btn btn-gold btn-lg">Apply for Admission 2025</button>
+      <button onclick="showToast('Campus Life module launching soon!')" class="btn btn-outline-white btn-lg">Explore Campus</button>
+    </div>
+  </div>
+  <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+    <div class="hero-stat"><div class="hero-stat-value" data-count="15000" data-suffix="+">0</div><div class="hero-stat-label">Students</div></div>
+    <div class="hero-stat"><div class="hero-stat-value" data-count="850" data-suffix="+">0</div><div class="hero-stat-label">Faculty</div></div>
+    <div class="hero-stat"><div class="hero-stat-value" data-count="47">0</div><div class="hero-stat-label">Programs</div></div>
+    <div class="hero-stat"><div class="hero-stat-value" data-count="98" data-suffix="%">0</div><div class="hero-stat-label">Placement Rate</div></div>
+    <div class="hero-stat"><div class="hero-stat-value" data-prefix="₹" data-count="24" data-suffix=" LPA">0</div><div class="hero-stat-label">Avg Package</div></div>
+    <div class="hero-stat"><div class="hero-stat-value">A++</div><div class="hero-stat-label">NAAC Grade</div></div>
+  </div>
+  <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<!-- ═══════ SECTION B — ANNOUNCEMENT TICKER ═══════ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>📢 Applications Open: B.Tech 2025 | Deadline: June 30</span>
+    <span>🏆 Olympus wins Smart India Hackathon 2025</span>
+    <span>📅 Summit Tech Fest — Aug 14-16, 2025 | Register Now</span>
+    <span>🎓 PhD Admissions Open — Computer Science & MBA</span>
+    <span>🌟 New MoU signed with Google for AI Research</span>
+    <span>📢 Applications Open: B.Tech 2025 | Deadline: June 30</span>
+    <span>🏆 Olympus wins Smart India Hackathon 2025</span>
+    <span>📅 Summit Tech Fest — Aug 14-16, 2025 | Register Now</span>
+    <span>🎓 PhD Admissions Open — Computer Science & MBA</span>
+    <span>🌟 New MoU signed with Google for AI Research</span>
+  </div>
+</div>
+
+<!-- ═══════ SECTION C — ABOUT SNAPSHOT ═══════ -->
+<section class="section" id="about-snapshot">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:center; gap:4rem">
+      <div class="grid grid-2" style="gap:1rem" data-aos="fade-right">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=300&fit=crop" alt="Campus building" style="border-radius:var(--radius);width:100%;height:200px;object-fit:cover">
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c8f1?w=400&h=300&fit=crop" alt="Students studying" style="border-radius:var(--radius);width:100%;height:200px;object-fit:cover">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=300&fit=crop" alt="Graduation ceremony" style="border-radius:var(--radius);width:100%;height:200px;object-fit:cover">
+        <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=300&fit=crop" alt="Library" style="border-radius:var(--radius);width:100%;height:200px;object-fit:cover">
+      </div>
+      <div data-aos="fade-left">
+        <p class="section-label">About Us</p>
+        <h2 class="section-title">More Than a University. A Legacy.</h2>
+        <p style="color:var(--gray);margin-bottom:2rem;line-height:1.9">
+          Founded in 1987 by visionary educator Dr. Arjun Mehta, Olympus University has grown from a single engineering college to a full-fledged deemed university with 12 departments, 47 programs, and a sprawling 200-acre campus in the heart of Bengaluru. We have produced CEOs, scientists, artists, and changemakers who lead organizations across 60 countries.
+        </p>
+        <div class="grid grid-4" style="gap:1.5rem;margin-bottom:2rem">
+          <div class="text-center"><div class="stat-value" style="font-size:2rem;color:var(--gold)" data-count="37" data-suffix="+">0</div><div style="font-size:0.8rem;color:var(--gray)">Years</div></div>
+          <div class="text-center"><div class="stat-value" style="font-size:2rem;color:var(--gold)" data-count="50000" data-suffix="+">0</div><div style="font-size:0.8rem;color:var(--gray)">Alumni</div></div>
+          <div class="text-center"><div class="stat-value" style="font-size:2rem;color:var(--gold)" data-count="200">0</div><div style="font-size:0.8rem;color:var(--gray)">Acre Campus</div></div>
+          <div class="text-center"><div class="stat-value" style="font-size:2rem;color:var(--gold)" data-prefix="₹" data-count="120" data-suffix=" Cr">0</div><div style="font-size:0.8rem;color:var(--gray)">Research Fund</div></div>
+        </div>
+        <a href="about.html" class="btn btn-gold">Read Our Story <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION D — DEPARTMENTS GRID ═══════ -->
+<section class="section section-light" id="departments">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up" style="margin-bottom:3rem">
+      <p class="section-label">Explore</p>
+      <h2 class="section-title">Schools & Departments</h2>
+      <p class="section-subtitle" style="margin:0 auto">12 departments. 47 programs. Infinite possibilities.</p>
+    </div>
+    <div class="grid grid-4" id="deptGrid">
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="dept-card-icon"><i class="fas fa-laptop-code"></i></div>
+        <h4>Computer Science & Engineering</h4>
+        <p>AI, ML, Full-Stack, Cybersecurity</p>
+        <span class="programs-badge">4 Programs</span>
+        <a href="cse.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="50">
+        <div class="dept-card-icon"><i class="fas fa-microchip"></i></div>
+        <h4>Electronics & Communication</h4>
+        <p>VLSI, IoT, Embedded Systems</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="dept-card-icon"><i class="fas fa-cogs"></i></div>
+        <h4>Mechanical Engineering</h4>
+        <p>Robotics, Thermal, Manufacturing</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="dept-card-icon"><i class="fas fa-hard-hat"></i></div>
+        <h4>Civil Engineering</h4>
+        <p>Smart Infrastructure, Environmental</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="dept-card-icon"><i class="fas fa-chart-line"></i></div>
+        <h4>Business Administration</h4>
+        <p>MBA, Finance, Marketing, HR</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="dept-card-icon"><i class="fas fa-book-open"></i></div>
+        <h4>Arts & Humanities</h4>
+        <p>Literature, Psychology, Journalism</p>
+        <span class="programs-badge">5 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="dept-card-icon"><i class="fas fa-brain"></i></div>
+        <h4>Data Science & AI</h4>
+        <p>ML Ops, Data Eng, Analytics</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="dept-card-icon"><i class="fas fa-dna"></i></div>
+        <h4>Biotechnology</h4>
+        <p>Genomics, Biomedical, Pharma</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="dept-card-icon"><i class="fas fa-drafting-compass"></i></div>
+        <h4>Architecture</h4>
+        <p>Sustainable Design, Urban Planning</p>
+        <span class="programs-badge">2 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="450">
+        <div class="dept-card-icon"><i class="fas fa-gavel"></i></div>
+        <h4>Law</h4>
+        <p>Corporate Law, IP Law, Criminal Law</p>
+        <span class="programs-badge">3 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="dept-card-icon"><i class="fas fa-palette"></i></div>
+        <h4>Design & Media</h4>
+        <p>UX, Film, Graphic Design</p>
+        <span class="programs-badge">4 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="dept-card" data-aos="fade-up" data-aos-delay="550">
+        <div class="dept-card-icon"><i class="fas fa-atom"></i></div>
+        <h4>Pure Sciences</h4>
+        <p>Physics, Chemistry, Mathematics</p>
+        <span class="programs-badge">5 Programs</span>
+        <a href="departments.html" class="explore-link">Explore <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION E — STATS ═══════ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item" data-aos="fade-up"><div class="stat-value" data-count="15000" data-suffix="+">0</div><div class="stat-label">Students Enrolled</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100"><div class="stat-value" data-count="850" data-suffix="+">0</div><div class="stat-label">Full-time Faculty</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200"><div class="stat-value" data-count="50000" data-suffix="+">0</div><div class="stat-label">Alumni Worldwide</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300"><div class="stat-value" data-count="98" data-suffix="%">0</div><div class="stat-label">Placement Rate</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="400"><div class="stat-value" data-prefix="₹" data-count="72" data-suffix=" LPA">0</div><div class="stat-label">Highest Package</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="500"><div class="stat-value" data-count="47">0</div><div class="stat-label">UG/PG/PhD Programs</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="600"><div class="stat-value" data-count="200">0</div><div class="stat-label">Acre Campus</div></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="700"><div class="stat-value" data-count="120" data-suffix="+">0</div><div class="stat-label">Publications (2024)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION F — NEWS & EVENTS ═══════ -->
+<section class="section" id="news">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem" data-aos="fade-up">
+      <p class="section-label">Stay Updated</p>
+      <h2 class="section-title">News & Events</h2>
+    </div>
+    <div class="grid grid-2" style="gap:3rem;align-items:start">
+      <div data-aos="fade-right">
+        <div class="news-card" style="height:100%">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=800&h=400&fit=crop" alt="Summit Tech Fest">
+          <div class="news-card-body">
+            <span class="badge">FEATURED</span>
+            <p class="date"><i class="far fa-calendar"></i> June 12, 2025</p>
+            <h3 style="margin-bottom:0.75rem">Summit 2025: Olympus Annual Tech Fest Returns with ₹5 Lakh Prize Pool</h3>
+            <p style="color:var(--gray);margin-bottom:1rem">The most anticipated tech festival in South India features a 48-hour hackathon, robotics challenge, AI workshop series, and keynote by Google's VP of Engineering.</p>
+            <a href="announcements.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <div class="news-card" style="margin-bottom:1.5rem">
+          <div class="news-card-body" style="display:flex;gap:1rem;align-items:center">
+            <img src="https://images.unsplash.com/photo-1532619187608-e5375cab36aa?w=120&h=90&fit=crop" alt="Research" style="width:120px;height:90px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0">
+            <div><p class="date">June 10, 2025</p><h4 style="font-size:0.95rem">Olympus CSE Dept wins ₹2 Crore DST Research Grant</h4></div>
+          </div>
+        </div>
+        <div class="news-card" style="margin-bottom:1.5rem">
+          <div class="news-card-body" style="display:flex;gap:1rem;align-items:center">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&h=90&fit=crop" alt="Vice Chancellor" style="width:120px;height:90px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0">
+            <div><p class="date">June 5, 2025</p><h4 style="font-size:0.95rem">Dr. Priya Nair appointed as new Vice Chancellor</h4></div>
+          </div>
+        </div>
+        <div class="news-card" style="margin-bottom:1.5rem">
+          <div class="news-card-body" style="display:flex;gap:1rem;align-items:center">
+            <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=120&h=90&fit=crop" alt="Startup" style="width:120px;height:90px;object-fit:cover;border-radius:var(--radius-sm);flex-shrink:0">
+            <div><p class="date">May 28, 2025</p><h4 style="font-size:0.95rem">Students launch AI startup 'NeuroPath', raise ₹50L seed</h4></div>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;padding:1.5rem;background:var(--navy);border-radius:var(--radius);color:#fff">
+          <h4 style="color:var(--gold);margin-bottom:1rem"><i class="far fa-calendar-alt"></i> Upcoming Events</h4>
+          <div style="font-size:0.9rem;line-height:2.2">
+            📅 <b>June 30</b> — Last date for UG Admissions<br>
+            📅 <b>July 4</b> — Orientation Day 2025<br>
+            📅 <b>July 20</b> — Convocation Ceremony<br>
+            📅 <b>Aug 14</b> — Summit Tech Fest begins<br>
+            📅 <b>Sep 1</b> — Semester I Classes begin
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION G — FEATURED PROGRAMS ═══════ -->
+<section class="section section-light" id="programs">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:2rem" data-aos="fade-up">
+      <p class="section-label">Academics</p>
+      <h2 class="section-title">Featured Programs</h2>
+    </div>
+    <div class="tabs" data-aos="fade-up">
+      <button class="tab-btn active" data-tab="tab-ug">Undergraduate</button>
+      <button class="tab-btn" data-tab="tab-pg">Postgraduate</button>
+      <button class="tab-btn" data-tab="tab-phd">PhD</button>
+    </div>
+    <div id="tab-ug" class="tab-content active">
+      <div class="grid grid-4">
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-code"></i></div><h4>B.Tech Computer Science</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">4 Years | 120 Seats</p><p style="font-size:0.85rem;color:var(--gray)">AI, ML, Full-Stack Development, Cloud Computing</p><a href="cse.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-robot"></i></div><h4>B.Tech AI & Data Science</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">4 Years | 60 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Machine Learning, Deep Learning, Analytics</p><a href="departments.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-briefcase"></i></div><h4>BBA</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">3 Years | 120 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Finance, Marketing, Entrepreneurship</p><a href="departments.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-building"></i></div><h4>B.Arch</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">5 Years | 40 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Sustainable Design, Urban Planning, Landscape</p><a href="departments.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+      </div>
+    </div>
+    <div id="tab-pg" class="tab-content">
+      <div class="grid grid-4">
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-brain"></i></div><h4>M.Tech Machine Learning</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">2 Years | 30 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Deep Learning, NLP, Computer Vision</p><a href="academics.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-chart-pie"></i></div><h4>MBA Dual Specialization</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">2 Years | 120 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Finance, Marketing, HR, Operations</p><a href="academics.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-database"></i></div><h4>M.Sc Data Science</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">2 Years | 40 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Big Data, ML Ops, Statistical Modeling</p><a href="academics.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-balance-scale"></i></div><h4>LLM Corporate Law</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">1 Year | 30 Seats</p><p style="font-size:0.85rem;color:var(--gray)">Mergers, IP Law, International Trade</p><a href="academics.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+      </div>
+    </div>
+    <div id="tab-phd" class="tab-content">
+      <div class="grid grid-4">
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-microscope"></i></div><h4>PhD Computer Science</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">3-5 Years | Fellowship</p><p style="font-size:0.85rem;color:var(--gray)">NLP, Computer Vision, Distributed Systems</p><a href="research.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-dna"></i></div><h4>PhD Biotechnology</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">3-5 Years | Fellowship</p><p style="font-size:0.85rem;color:var(--gray)">Genomics, Proteomics, Biomedical Eng.</p><a href="research.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-chart-bar"></i></div><h4>PhD Management</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">3-5 Years | Fellowship</p><p style="font-size:0.85rem;color:var(--gray)">Organizational Behavior, FinTech, Strategy</p><a href="research.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+        <div class="card"><div class="card-body"><div style="color:var(--gold);font-size:2rem;margin-bottom:1rem"><i class="fas fa-city"></i></div><h4>PhD Civil Engineering</h4><p style="color:var(--gray);font-size:0.9rem;margin:0.5rem 0">3-5 Years | Fellowship</p><p style="font-size:0.85rem;color:var(--gray)">Structural, Geotechnical, Smart Cities</p><a href="research.html" class="btn btn-outline btn-sm mt-3" style="width:100%;justify-content:center">Learn More</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION H — PLACEMENTS SNAPSHOT ═══════ -->
+<section class="section" id="placements">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem" data-aos="fade-up">
+      <p class="section-label">Careers</p>
+      <h2 class="section-title">Careers That Soar</h2>
+    </div>
+    <div class="grid grid-4" style="margin-bottom:3rem" data-aos="fade-up">
+      <div class="stat-card"><div class="stat-card-icon"><i class="fas fa-percentage"></i></div><div><div style="font-size:1.5rem;font-weight:700;color:var(--gold)" data-count="98" data-suffix="%">0</div><div style="font-size:0.8rem;color:var(--gray)">Placed</div></div></div>
+      <div class="stat-card"><div class="stat-card-icon"><i class="fas fa-rupee-sign"></i></div><div><div style="font-size:1.5rem;font-weight:700;color:var(--gold)" data-prefix="₹" data-count="24" data-suffix=" LPA">0</div><div style="font-size:0.8rem;color:var(--gray)">Average Package</div></div></div>
+      <div class="stat-card"><div class="stat-card-icon"><i class="fas fa-trophy"></i></div><div><div style="font-size:1.5rem;font-weight:700;color:var(--gold)" data-prefix="₹" data-count="72" data-suffix=" LPA">0</div><div style="font-size:0.8rem;color:var(--gray)">Highest Package</div></div></div>
+      <div class="stat-card"><div class="stat-card-icon"><i class="fas fa-building"></i></div><div><div style="font-size:1.5rem;font-weight:700;color:var(--gold)" data-count="350" data-suffix="+">0</div><div style="font-size:0.8rem;color:var(--gray)">Recruiters</div></div></div>
+    </div>
+    <!-- Recruiter Logos Marquee -->
+    <div style="overflow:hidden;margin-bottom:3rem" data-aos="fade-up">
+      <div class="recruiter-track">
+        <img src="https://logo.clearbit.com/google.com" alt="Google"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"><img src="https://logo.clearbit.com/amazon.com" alt="Amazon"><img src="https://logo.clearbit.com/meta.com" alt="Meta"><img src="https://logo.clearbit.com/infosys.com" alt="Infosys"><img src="https://logo.clearbit.com/tcs.com" alt="TCS"><img src="https://logo.clearbit.com/wipro.com" alt="Wipro"><img src="https://logo.clearbit.com/deloitte.com" alt="Deloitte"><img src="https://logo.clearbit.com/goldmansachs.com" alt="Goldman Sachs"><img src="https://logo.clearbit.com/adobe.com" alt="Adobe"><img src="https://logo.clearbit.com/oracle.com" alt="Oracle"><img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce">
+        <img src="https://logo.clearbit.com/google.com" alt="Google"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"><img src="https://logo.clearbit.com/amazon.com" alt="Amazon"><img src="https://logo.clearbit.com/meta.com" alt="Meta"><img src="https://logo.clearbit.com/infosys.com" alt="Infosys"><img src="https://logo.clearbit.com/tcs.com" alt="TCS">
+      </div>
+    </div>
+    <!-- Testimonials -->
+    <div class="grid grid-3" data-aos="fade-up">
+      <div class="card"><div class="card-body" style="text-align:center;padding:2rem">
+        <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=C9A84C&color=0B1340&size=80&rounded=true" alt="Priya Sharma" style="margin:0 auto 1rem;border-radius:50%">
+        <h4>Priya Sharma</h4><p style="color:var(--gold);font-size:0.85rem;margin-bottom:1rem">CSE 2024 | Google | ₹52 LPA</p>
+        <p style="color:var(--gray);font-size:0.9rem;font-style:italic">"The mock interviews at Olympus's Training Cell were tougher than the actual Google interviews. I felt fully prepared."</p>
+      </div></div>
+      <div class="card"><div class="card-body" style="text-align:center;padding:2rem">
+        <img src="https://ui-avatars.com/api/?name=Akash+Nair&background=C9A84C&color=0B1340&size=80&rounded=true" alt="Akash Nair" style="margin:0 auto 1rem;border-radius:50%">
+        <h4>Akash Nair</h4><p style="color:var(--gold);font-size:0.85rem;margin-bottom:1rem">MBA 2024 | Goldman Sachs | ₹38 LPA</p>
+        <p style="color:var(--gray);font-size:0.9rem;font-style:italic">"The case study sessions and industry mentor program at Olympus gave me the edge I needed."</p>
+      </div></div>
+      <div class="card"><div class="card-body" style="text-align:center;padding:2rem">
+        <img src="https://ui-avatars.com/api/?name=Sneha+Reddy&background=C9A84C&color=0B1340&size=80&rounded=true" alt="Sneha Reddy" style="margin:0 auto 1rem;border-radius:50%">
+        <h4>Sneha Reddy</h4><p style="color:var(--gold);font-size:0.85rem;margin-bottom:1rem">AI/ML 2024 | Microsoft | ₹45 LPA</p>
+        <p style="color:var(--gray);font-size:0.9rem;font-style:italic">"My capstone project on computer vision directly became my interview talking point. Olympus prepared me for the real world."</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION I — CAMPUS LIFE GLIMPSE ═══════ -->
+<section class="section section-light" id="campus-glimpse">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem" data-aos="fade-up">
+      <p class="section-label">Experience</p>
+      <h2 class="section-title">Life at Olympus</h2>
+    </div>
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=400&h=300&fit=crop" alt="Sports"><div class="gallery-overlay"><span>Sports & Athletics</span></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop" alt="Cultural Fest"><div class="gallery-overlay"><span>Cultural Festival</span></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop" alt="Library"><div class="gallery-overlay"><span>Central Library</span></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop" alt="Labs"><div class="gallery-overlay"><span>Research Labs</span></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&h=300&fit=crop" alt="Canteen"><div class="gallery-overlay"><span>Campus Cafeteria</span></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=400&h=300&fit=crop" alt="Hostel"><div class="gallery-overlay"><span>Student Hostels</span></div></div>
+    </div>
+    <div class="text-center mt-4" data-aos="fade-up">
+      <a href="campus.html" class="btn btn-gold">Take a Virtual Tour <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SECTION J — ALUMNI SPOTLIGHT ═══════ -->
+<section class="section" id="alumni">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:3rem" data-aos="fade-up">
+      <p class="section-label">Our Pride</p>
+      <h2 class="section-title">Alumni Spotlight</h2>
+    </div>
+    <div class="grid grid-3" data-aos="fade-up">
+      <div class="card"><div class="card-body" style="text-align:center;padding:2rem">
+        <img src="https://ui-avatars.com/api/?name=Rohan+Verma&background=0B1340&color=C9A84C&size=90&rounded=true&bold=true" alt="Rohan Verma" style="margin:0 auto 1rem">
+        <h4>Rohan Verma</h4>
+        <p style="color:var(--gold);font-size:0.85rem">Co-founder, TechZen AI | Batch 2005</p>
+        <p style="color:var(--gray);font-size:0.9rem;font-style:italic;margin-top:1rem">"Olympus taught me that failure is just the first draft."</p>
+      </div></div>
+      <div class="card"><div class="card-body" style="text-align:center;padding:2rem">
+        <img src="https://ui-avatars.com/api/?name=Ananya+Krishnan&background=0B1340&color=C9A84C&size=90&rounded=true&bold=true" alt="Ananya Krishnan" style="margin:0 auto 1rem">
+        <h4>Ananya Krishnan</h4>
+        <p style="color:var(--gold);font-size:0.85rem">VP Engineering, Google India | Batch 2008</p>
+        <p style="color:var(--gray);font-size:0.9rem;font-style:italic;margin-top:1rem">"The labs here were better than my first workplace."</p>
+      </div></div>
+      <div class="card"><div class="card-body" style="text-align:center;padding:2rem">
+        <img src="https://ui-avatars.com/api/?name=Arjun+Patel&background=0B1340&color=C9A84C&size=90&rounded=true&bold=true" alt="Arjun Patel" style="margin:0 auto 1rem">
+        <h4>Arjun Patel</h4>
+        <p style="color:var(--gold);font-size:0.85rem">IAS Officer, 2013 Batch | Batch 2010</p>
+        <p style="color:var(--gray);font-size:0.9rem;font-style:italic;margin-top:1rem">"Olympus gave me the discipline to crack UPSC."</p>
+      </div></div>
+    </div>
+    <div class="text-center mt-4" data-aos="fade-up">
+      <a href="alumni.html" class="btn btn-outline">Join Our Alumni Network <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 class="display-font">⛰️ Olympus University</h3>
+        <p class="tagline">"Rise Above. Lead Beyond."</p>
+        <p>Established 1987 | Bengaluru, Karnataka</p>
+        <p>A premier institution dedicated to academic excellence, innovation, and holistic development since 1987. NAAC A++ accredited.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="departments.html">Departments</a><a href="academics.html">Academics</a><a href="admissions.html">Admissions</a><a href="placements.html">Placements</a><a href="research.html">Research</a><a href="campus.html">Campus Life</a><a href="alumni.html">Alumni</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Academics</h4>
+        <a href="academics.html">Undergraduate Programs</a><a href="academics.html">Postgraduate Programs</a><a href="academics.html">PhD Programs</a><a href="academics.html#calendar">Academic Calendar</a><a href="academics.html#exam">Examination Cell</a><a href="admissions.html">Fee Structure</a><a href="academics.html#scholarships">Scholarships</a><a href="#">Online Resources</a>
+      </div>
+      <div class="footer-col">
+        <h4>Campus</h4>
+        <a href="campus.html">Library</a><a href="campus.html">Sports Complex</a><a href="campus.html">Hostels</a><a href="campus.html">Cafeteria</a><a href="campus.html">Medical Center</a><a href="campus.html">Innovation Hub</a><a href="campus.html">Auditorium</a><a href="campus.html">Virtual Tour</a>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p>📍 Olympus University Campus, Sarjapur Road, Electronic City Phase 2, Bengaluru - 560100</p>
+        <p>📞 +91-80-4567-8900</p>
+        <p>📠 +91-80-4567-8901</p>
+        <p>✉ info@olympusuniversity.edu.in</p>
+        <p>✉ admissions@olympusuniversity.edu.in</p>
+      </div>
+    </div>
+  </div>
+  <div class="newsletter-strip">
+    <div class="container">
+      <h4>Stay updated with Olympus</h4>
+      <form class="newsletter-form" onsubmit="event.preventDefault();showToast('Subscribed successfully! 🎉');this.reset();">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 Olympus University. All Rights Reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a><a href="#">Terms of Use</a><a href="#">Sitemap</a><a href="#">RTI</a><a href="#">Grievance</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<div class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></div>
+
+<!-- SCRIPTS -->
+<script src="main.js"></script>
+<script src="chatbot.js"></script>
+</body>
+</html>
