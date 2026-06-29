@@ -1,0 +1,344 @@
+/* login.css - Styles for Animated Portals */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-container.light {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.login-container.dark {
+  background-color: #0B1340; /* Olympus Navy */
+  color: #f8fafc;
+}
+
+.particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.theme-toggle-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.login-container.light .theme-toggle-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+.login-card {
+  z-index: 10;
+  width: 100%;
+  max-width: 420px;
+  margin: 2rem;
+  animation: slideUpFade 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.login-card-inner {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.login-container.light .login-card-inner {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+.go-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #C9A84C; /* Olympus Gold */
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.go-home-link:hover {
+  opacity: 0.8;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.login-header p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.3s;
+}
+
+.login-form.form-success {
+  animation: formSuccessPulse 1s ease;
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login-container.light .form-field input {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.form-field label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.login-container.light .form-field label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.form-field.active input,
+.form-field input:focus {
+  border-color: #C9A84C;
+}
+
+.form-field.active label,
+.form-field input:focus ~ label,
+.form-field input:valid ~ label,
+.form-field.has-value label {
+  top: 0;
+  left: 0.8rem;
+  font-size: 0.75rem;
+  background: #0B1340;
+  padding: 0 0.4rem;
+  color: #C9A84C;
+}
+
+.login-container.light .form-field.active label,
+.login-container.light .form-field input:focus ~ label,
+.login-container.light .form-field input:valid ~ label,
+.login-container.light .form-field.has-value label {
+  background: #fff;
+}
+
+.form-field.invalid input {
+  border-color: #ef4444;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: -1.2rem;
+  left: 0.5rem;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: inherit;
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggle-password:hover {
+  opacity: 1;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #C9A84C;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #C9A84C, #A68A3D);
+  color: #0B1340;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(201, 168, 76, 0.5);
+}
+
+.login-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: inherit;
+  opacity: 0.5;
+  font-size: 0.85rem;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid currentColor;
+}
+
+.separator span {
+  padding: 0 1rem;
+}
+
+.social-login {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login-container.light .social-button {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.social-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.login-container.light .social-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.signup-prompt {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.signup-prompt a {
+  color: #C9A84C;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes formSuccessPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
